@@ -1,15 +1,9 @@
 # Personal Blog
 
-This repository contains a static export of the website.
+This repository hosts the public static version of my personal blog, published through GitHub Pages.
 
 ## Structure
 
-- `docs/` - the published static site files for GitHub Pages
-- `README.md` - project documentation
-- `.gitignore` - local ignore rules
-
-## Deployment
-
-This repository is intended to use GitHub Pages with the `docs/` folder as the source.
-
-To update the site, replace files in `docs/` and push to this repo.
+- `docs/` - the published site files served by GitHub Pages
+- `README.md` - project overview and repository notes
+- `.gitignore` - local files and folders ignored by Git
