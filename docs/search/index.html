@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search results</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 2rem auto;
+        max-width: 760px;
+        line-height: 1.6;
+      }
+      a {
+        color: #0f766e;
+      }
+      .results {
+        margin-top: 1.5rem;
+      }
+      .result {
+        margin-bottom: 1rem;
+      }
+      .muted {
+        color: #6b7280;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Search results</h1>
+    <p id="summary">Loading…</p>
+    <div id="results" class="results"></div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const query = (params.get("q") || "").trim();
+      const summary = document.getElementById("summary");
+      const results = document.getElementById("results");
+
+      if (!query) {
+        summary.textContent = "Please enter a search term.";
+      } else {
+        const normalized = query.toLowerCase();
+        const entries = [
+          {
+            title: "How to quickly convert a string to a number in JavaScript",
+            url: "/how-to-quickly-convert-string-to-number-in-javascript/",
+          },
+          {
+            title: "Two frequent reasons developers avoid writing tests",
+            url: "/2-frequent-reasons-developers-avoid-writing-tests/",
+          },
+          {
+            title: "A detailed guide to building backend services",
+            url: "/a-detailed-guide-on-how-you-can-develop-back-end-services/",
+          },
+          {
+            title: "How to quickly repeat a string without looping in Python",
+            url: "/how-to-quickly-repeat-string-without-looping-in-python/",
+          },
+          { title: "About me", url: "/about-page/" },
+          { title: "Contact me", url: "/contact-me/" },
+        ];
+
+        const matches = entries.filter((entry) =>
+          entry.title.toLowerCase().includes(normalized),
+        );
+
+        if (matches.length) {
+          summary.textContent = `Showing ${matches.length} result${matches.length === 1 ? "" : "s"} for “${query}”.`;
+          results.innerHTML = matches
+            .map(
+              (entry) => `
+            <div class="result">
+              <a href="${entry.url}">${entry.title}</a>
+            </div>
+          `,
+            )
+            .join("");
+        } else {
+          summary.textContent = `No results found for “${query}”.`;
+          results.innerHTML =
+            '<p class="muted">Try a broader term such as “Python”, “JavaScript”, or “about”.</p>';
+        }
+      }
+    </script>
+  </body>
+</html>
