@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head><meta http-equiv="content-type" content="text/html" charset="UTF-8">
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v27.9 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>10 Quick Python Snippets That Can Help You Work with Dates - Fatos Morina</title>
+	<meta name="description" content="Photo by Brad Neathery on Unsplash If you use Python in your work, or simply for scripting, chances are that there will come a point in time when you">
+	<link rel="canonical" href="/10-quick-python-snippets-that-can-help-you-work-with-dates/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="10 Quick Python Snippets That Can Help You Work with Dates - Fatos Morina">
+	<meta property="og:description" content="Photo by Brad Neathery on Unsplash If you use Python in your work, or simply for scripting, chances are that there will come a point in time when you">
+	<meta property="og:url" content="/10-quick-python-snippets-that-can-help-you-work-with-dates/">
+	<meta property="og:site_name" content="Fatos Morina">
+	<meta property="article:published_time" content="2021-05-02T16:42:00+00:00">
+	<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/0*XwtvGwPR4Y0vM5mZ">
+	<meta name="author" content="Fatos Morina">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Fatos Morina">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="4 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/#article","isPartOf":{"@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/"},"author":{"name":"Fatos Morina","@id":"\/#\/schema\/person\/475a97ff239f1bb6c80b3e7a39636955"},"headline":"10 Quick Python Snippets That Can Help You Work with Dates","datePublished":"2021-05-02T16:42:00+00:00","mainEntityOfPage":{"@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/"},"wordCount":874,"commentCount":0,"publisher":{"@id":"\/#\/schema\/person\/475a97ff239f1bb6c80b3e7a39636955"},"image":{"@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/#primaryimage"},"thumbnailUrl":"https:\/\/cdn-images-1.medium.com\/max\/800\/0*XwtvGwPR4Y0vM5mZ","keywords":["date","dates","developer"],"articleSection":["Science &amp; Tech"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["\/10-quick-python-snippets-that-can-help-you-work-with-dates\/#respond"]}]},{"@type":"WebPage","@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/","url":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/","name":"10 Quick Python Snippets That Can Help You Work with Dates - Fatos Morina","isPartOf":{"@id":"\/#website"},"primaryImageOfPage":{"@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/#primaryimage"},"image":{"@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/#primaryimage"},"thumbnailUrl":"https:\/\/cdn-images-1.medium.com\/max\/800\/0*XwtvGwPR4Y0vM5mZ","datePublished":"2021-05-02T16:42:00+00:00","description":"Photo by Brad Neathery on Unsplash If you use Python in your work, or simply for scripting, chances are that there will come a point in time when you","breadcrumb":{"@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["\/10-quick-python-snippets-that-can-help-you-work-with-dates\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/#primaryimage","url":"https:\/\/cdn-images-1.medium.com\/max\/800\/0*XwtvGwPR4Y0vM5mZ","contentUrl":"https:\/\/cdn-images-1.medium.com\/max\/800\/0*XwtvGwPR4Y0vM5mZ"},{"@type":"BreadcrumbList","@id":"\/10-quick-python-snippets-that-can-help-you-work-with-dates\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"\/"},{"@type":"ListItem","position":2,"name":"10 Quick Python Snippets That Can Help You Work with Dates"}]},{"@type":"WebSite","@id":"\/#website","url":"\/","name":"Fatos Morina","description":"Software engineering and personal development","publisher":{"@id":"\/#\/schema\/person\/475a97ff239f1bb6c80b3e7a39636955"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"\/#\/schema\/person\/475a97ff239f1bb6c80b3e7a39636955","name":"Fatos Morina","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/secure.gravatar.com\/avatar\/8e728108f636571760421f15d5b579ab2158d170feb617b28adfeb23a9453d11?s=96&d=mm&r=g","url":"https:\/\/secure.gravatar.com\/avatar\/8e728108f636571760421f15d5b579ab2158d170feb617b28adfeb23a9453d11?s=96&d=mm&r=g","contentUrl":"https:\/\/secure.gravatar.com\/avatar\/8e728108f636571760421f15d5b579ab2158d170feb617b28adfeb23a9453d11?s=96&d=mm&r=g","caption":"Fatos Morina"},"logo":{"@id":"https:\/\/secure.gravatar.com\/avatar\/8e728108f636571760421f15d5b579ab2158d170feb617b28adfeb23a9453d11?s=96&d=mm&r=g"},"description":"Experienced and passionate Software Engineer with a demonstrated history of working in the full life cycle of software development and implementation from identification of user requirements, design, development, testing to maintenance of a software. Open source enthusiast. Blogger. You can hire him for different kinds of things.","url":"\/author\/fatosmorina\/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//static.addtoany.com">
+<link rel="dns-prefetch" href="//secure.gravatar.com">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="//stats.wp.com">
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<link rel="preconnect" href="//i0.wp.com">
+<link rel="alternate" type="application/rss+xml" title="Fatos Morina » Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Fatos Morina » Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Fatos Morina » 10 Quick Python Snippets That Can Help You Work with Dates Comments Feed" href="/10-quick-python-snippets-that-can-help-you-work-with-dates/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2F10-quick-python-snippets-that-can-help-you-work-with-dates%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2F10-quick-python-snippets-that-can-help-you-work-with-dates%2F&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel="stylesheet" id="jetpack_related-posts-css" href="/wp-content/plugins/jetpack/modules/related-posts/related-posts.css?ver=20240116" media="all">
+<link rel="stylesheet" id="pmb_common-css" href="/wp-content/plugins/print-my-blog/assets/styles/pmb-common.css?ver=1756907520" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=7.0" media="all">
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel="stylesheet" id="jetpack-forms-layout-css" href="/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-forms/src//dist/contact-form/css/jetpack-forms-layout.css?ver=15.9.1" media="all">
+<link rel="stylesheet" id="prismatic-blocks-css" href="/wp-content/plugins/prismatic/css/styles-blocks.css?ver=7.0" media="all">
+<link rel="stylesheet" id="pmb-select2-css" href="/wp-content/plugins/print-my-blog/assets/styles/libs/select2.min.css?ver=4.0.6" media="all">
+<link rel="stylesheet" id="pmb-jquery-ui-css" href="/wp-content/plugins/print-my-blog/assets/styles/libs/jquery-ui/jquery-ui.min.css?ver=1.11.4" media="all">
+<link rel="stylesheet" id="pmb-setup-page-css" href="/wp-content/plugins/print-my-blog/assets/styles/setup-page.css?ver=1756907520" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=7.0" media="all">
+<style id="jetpack-sharing-buttons-style-inline-css">
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+/*# sourceURL=/wp-content/plugins/jetpack/_inc/blocks/sharing-buttons/view.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--accent: #1abc9c;--wp--preset--color--dark-gray: #444;--wp--preset--color--medium-gray: #666;--wp--preset--color--light-gray: #888;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 16px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--regular: 19px;--wp--preset--font-size--larger: 32px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-accent-color{color: var(--wp--preset--color--accent) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-color{color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-color{color: var(--wp--preset--color--light-gray) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-accent-background-color{background-color: var(--wp--preset--color--accent) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-background-color{background-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-background-color{background-color: var(--wp--preset--color--light-gray) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-accent-border-color{border-color: var(--wp--preset--color--accent) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-medium-gray-border-color{border-color: var(--wp--preset--color--medium-gray) !important;}.has-light-gray-border-color{border-color: var(--wp--preset--color--light-gray) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-regular-font-size{font-size: var(--wp--preset--font-size--regular) !important;}.has-larger-font-size{font-size: var(--wp--preset--font-size--larger) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel="stylesheet" id="bcct_style-css" href="/wp-content/plugins/better-click-to-tweet/assets/css/styles.css?ver=3.0" media="all">
+<link rel="stylesheet" id="ctt-css" href="/wp-content/plugins/click-to-tweet/css/ctt-module-design.css?ver=7.0" media="all">
+<link rel="stylesheet" id="github-embed-css" href="/wp-content/plugins/github-embed/css/github-embed.css?ver=7.0" media="all">
+<link rel="stylesheet" id="addtoany-css" href="/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16" media="all">
+<link rel="stylesheet" id="hemingway_googleFonts-css" href="/wp-content/themes/hemingway/assets/css/fonts.css" media="all">
+<link rel="stylesheet" id="hemingway_style-css" href="/wp-content/themes/hemingway/style.css?ver=2.3.2" media="all">
+<script id="jetpack_related-posts-js-extra">
+var related_posts_js_options = {"post_heading":"h4"};
+//# sourceURL=jetpack_related-posts-js-extra
+</script>
+<script id="jetpack_related-posts-js" src="/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?ver=20240116"></script>
+<script id="addtoany-core-js-before">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+
+//# sourceURL=addtoany-core-js-before
+</script>
+<script id="addtoany-core-js" defer src="https://static.addtoany.com/menu/page.js"></script>
+<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="addtoany-jquery-js" defer src="/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1"></script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/3195"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.0">
+<link rel="shortlink" href="https://wp.me/p4rywL-Px">
+	<style>img#wpstats{display:none}</style>
+		
+	</head>
+	
+	<body data-rsssl="1" class="wp-singular post-template-default single single-post postid-3195 single-format-standard wp-theme-hemingway elementor-default elementor-kit-2449">
+
+		
+		<a class="skip-link button" href="#site-content">Skip to the content</a>
+	
+		<div class="big-wrapper">
+	
+			<div class="header-cover section bg-dark-light no-padding">
+
+						
+				<div class="header section" style="background-image: url(/wp-content/uploads/2017/05/cropped-MaxPixel.freegreatpicture.com-Business-Office-Workstation-Macbook-Air-Notebook-336369.jpg);">
+							
+					<div class="header-inner section-inner">
+					
+											
+							<div class="blog-info">
+							
+																	<div class="blog-title">
+										<a href="/" rel="home">Fatos Morina</a>
+									</div>
+																
+																	<p class="blog-description">Software engineering and personal development</p>
+															
+							</div><!-- .blog-info -->
+							
+															
+					</div><!-- .header-inner -->
+								
+				</div><!-- .header -->
+			
+			</div><!-- .bg-dark -->
+			
+			<div class="navigation section no-padding bg-dark">
+			
+				<div class="navigation-inner section-inner group">
+				
+					<div class="toggle-container section-inner hidden">
+			
+						<button type="button" class="nav-toggle toggle">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<span class="screen-reader-text">Toggle mobile menu</span>
+						</button>
+						
+						<button type="button" class="search-toggle toggle">
+							<div class="metal"></div>
+							<div class="glass"></div>
+							<div class="handle"></div>
+							<span class="screen-reader-text">Toggle search field</span>
+						</button>
+											
+					</div><!-- .toggle-container -->
+					
+					<div class="blog-search hidden">
+						<form role="search" method="get" class="search-form" action="/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>					</div><!-- .blog-search -->
+				
+					<ul class="blog-menu">
+						<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="https://fatosmorina.com/">Home</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-9"><a href="/category/tech/">Tech</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8"><a href="/category/p-d/">Personal Development</a></li>
+<li id="menu-item-7" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7"><a href="/about-page/">About me</a></li>
+<li id="menu-item-1147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1147"><a href="/contact-me/">Contact me</a></li>
+					 </ul><!-- .blog-menu -->
+					 
+					 <ul class="mobile-menu">
+					
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="https://fatosmorina.com/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-9"><a href="/category/tech/">Tech</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8"><a href="/category/p-d/">Personal Development</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7"><a href="/about-page/">About me</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1147"><a href="/contact-me/">Contact me</a></li>
+						
+					 </ul><!-- .mobile-menu -->
+				 
+				</div><!-- .navigation-inner -->
+				
+			</div><!-- .navigation -->
+<main class="wrapper section-inner group" id="site-content">
+
+	<div class="content left">
+
+		<div class="posts">
+												        
+			<article id="post-3195" class="post-3195 post type-post status-publish format-standard hentry category-tech tag-date tag-dates tag-developer">
+
+	<div class="post-header">
+
+		
+					
+				<h1 class="post-title entry-title">
+											10 Quick Python Snippets That Can Help You Work with Dates									</h1>
+
+							
+			<div class="post-meta">
+			
+				<span class="post-date"><a href="/10-quick-python-snippets-that-can-help-you-work-with-dates/">May 2, 2021</a></span>
+				
+				<span class="date-sep"> / </span>
+					
+				<span class="post-author"><a href="/author/fatosmorina/" rel="author">Fatos Morina</a></span>
+
+				
+					<span class="date-sep"> / </span>
+				
+					<a href="/10-quick-python-snippets-that-can-help-you-work-with-dates/#respond"><span class="dsq-postid" data-dsqidentifier="3195 /?p=3195"><span class="comment">0 Comments</span></span></a>
+								
+														
+			</div><!-- .post-meta -->
+
+					
+	</div><!-- .post-header -->
+																					
+	<div class="post-content entry-content">
+	
+		<div class="addtoany_share_save_container addtoany_content addtoany_content_top"><div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="/10-quick-python-snippets-that-can-help-you-work-with-dates/" data-a2a-title="10 Quick Python Snippets That Can Help You Work with Dates"><a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=%2F10-quick-python-snippets-that-can-help-you-work-with-dates%2F&amp;linkname=10%20Quick%20Python%20Snippets%20That%20Can%20Help%20You%20Work%20with%20Dates" title="Facebook" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=%2F10-quick-python-snippets-that-can-help-you-work-with-dates%2F&amp;linkname=10%20Quick%20Python%20Snippets%20That%20Can%20Help%20You%20Work%20with%20Dates" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share"></a></div></div>
+<figure class="wp-block-image"><img decoding="async" src="https://cdn-images-1.medium.com/max/800/0*XwtvGwPR4Y0vM5mZ" alt=""><figcaption>Photo by <a href="https://unsplash.com/@bradneathery?utm_source=medium&amp;utm_medium=referral" rel="noreferrer noopener" target="_blank">Brad Neathery</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral" rel="noreferrer noopener" target="_blank">Unsplash</a></figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">If you use Python in your work, or simply for scripting, chances are that there will come a point in time when you are going to need to work with dates.</p>
+
+
+
+<p class="wp-block-paragraph">It can be doing a conversion from one format to the other one, changing the timezone, etc.</p>
+
+
+
+<p class="wp-block-paragraph">Since you have already decided to read this article, then why don’t we stop wasting time talking and just start immediately learning?</p>
+
+
+
+<h3 class="wp-block-heading">1. Convert a string into a date</h3>
+
+
+
+<p class="wp-block-paragraph">Despite being engineers, we still spend a considerable amount of time using a natural language to talk.</p>
+
+
+
+<p class="wp-block-paragraph">Since that is the case, we can also convert a string looking like a natural phrase into a date as shown below:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/bc520837f37d9ca1df34db9a3a5b4585.js?file=string_to_date.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/bc520837f37d9ca1df34db9a3a5b4585">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<p class="wp-block-paragraph">In this example:</p>
+
+
+
+<ul class="wp-block-list"><li>%d — represents the day of the month, like 21, 22, 23, etc.</li><li>%B — represents the actual name of the month like January, February, March etc.</li><li>%Y — represents the year, like 2020, 2021, etc.</li></ul>
+
+
+
+<h3 class="wp-block-heading">2. Convert from one timezone to another one</h3>
+
+
+
+<p class="wp-block-paragraph">As we are mostly working remotely these days, we may have the chance to also work with someone who is in another timezone.</p>
+
+
+
+<p class="wp-block-paragraph">You can of course just Google and find out what time it is now in New York City even if you have never been before, but there is joy in implementing this yourself.</p>
+
+
+
+<p class="wp-block-paragraph">Let’s see how to do that.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/c1e860ec0dbefba328f4043bfe324ed7.js?file=timezone_conversions.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/c1e860ec0dbefba328f4043bfe324ed7">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<h3 class="wp-block-heading">3. Find the number of days between 2 dates</h3>
+
+
+
+<p class="wp-block-paragraph">Since we still live in this universe where time passes, we may need to find the number of days that have passed between one point and another one.</p>
+
+
+
+<p class="wp-block-paragraph">We can of course pull up a calendar and manually count the days, which is slow and boring.</p>
+
+
+
+<p class="wp-block-paragraph">To do that quickly, we can import the <em>date</em> module in our Python script and initially prepare the dates:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/467719a5f42e5af41b4baa409e83fcd7.js?file=first_second_dates.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/467719a5f42e5af41b4baa409e83fcd7">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<p class="wp-block-paragraph">After that, we can basically just find the difference between 2 numbers:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/fd73b7a4f6f5fec3dfd99fedbc10d7cb.js?file=difference_dates.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/fd73b7a4f6f5fec3dfd99fedbc10d7cb">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<p class="wp-block-paragraph">Yes, it’s that simple.</p>
+
+
+
+<p class="wp-block-paragraph">You do not have to spend hours doing it manually on a physical calendar. It can take barely a few moments to do it like this.</p>
+
+
+
+<h3 class="wp-block-heading">4. Add days to a date</h3>
+
+
+
+<p class="wp-block-paragraph">Let us imagine that you are working on a feature of a product in which the subscription for a user expires 90 days from now. You want to save up that date in the database using the following:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/4fff2e02a7a1ff9a60441ee7c71e495f.js?file=add_days.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/4fff2e02a7a1ff9a60441ee7c71e495f">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<h3 class="wp-block-heading">5. Add weeks to a date</h3>
+
+
+
+<p class="wp-block-paragraph">You can also just change that to weeks, like the following:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/350b311dab8d89a84e8225f5d5220784.js?file=add_weeks.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/350b311dab8d89a84e8225f5d5220784">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<h3 class="wp-block-heading">6. Subtract days from a date</h3>
+
+
+
+<p class="wp-block-paragraph">Have you ever wanted to go back in time and improve something in your life, stayed more with your loved ones, or simply start investing in Bitcoin a little bit earlier?</p>
+
+
+
+<p class="wp-block-paragraph">Well, I wish I could tell you how to do that.</p>
+
+
+
+<p class="wp-block-paragraph">However, if you want to find a date in the past, let’s say 180 days from now, you can easily do that using the following:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/19290d799ec6d74911f5448d684aca16.js?file=subtract_days.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/19290d799ec6d74911f5448d684aca16">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<h3 class="wp-block-heading">7. Subtract weeks from a date</h3>
+
+
+
+<p class="wp-block-paragraph">As you may have guessed already, you can also find a date by subtracting weeks:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/d9ae78924d717f6310abdfcef72a08f1.js?file=subtract_weeks.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/d9ae78924d717f6310abdfcef72a08f1">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<h3 class="wp-block-heading">8. Find the difference between 2 dates in months</h3>
+
+
+
+<p class="wp-block-paragraph">We can also find the difference between the 2 dates in months quite quickly.</p>
+
+
+
+<p class="wp-block-paragraph">We should keep in mind that we may have dates that are in different years, and it’s not enough to think that we can just subtract two months.</p>
+
+
+
+<p class="wp-block-paragraph">For example, between October 2018 and November 2021, there isn’t just a month difference. There is also a difference in years as well.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/d16f25a7e330c8f8f920a8ef1cd4c0f8.js?file=difference_months.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/d16f25a7e330c8f8f920a8ef1cd4c0f8">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<h3 class="wp-block-heading">9. Put days before months</h3>
+
+
+
+<p class="wp-block-paragraph">The majority of the world puts days in front of months in their dates:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://cdn-images-1.medium.com/max/800/0*izZ7YzXZhTRWZG9-" alt=""><figcaption><a href="https://www.theguardian.com/news/datablog/2013/dec/16/why-do-americans-write-the-month-before-the-day" rel="noreferrer noopener" target="_blank">Image: John Harding/Mona Chalabi Photograph: John Harding/Mona Chalabi</a></figcaption></figure>
+
+
+
+<p class="wp-block-paragraph">However, there can be cases when you get as input a date where the month is in front of the day.</p>
+
+
+
+<p class="wp-block-paragraph">If you want to convert those dates in the format that the majority of the world uses, here is how:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/bbdff531625fc7b90177b3026de5b263.js?file=days_before_months.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/bbdff531625fc7b90177b3026de5b263">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<h3 class="wp-block-heading">10. Find the first day of the month</h3>
+
+
+
+<p class="wp-block-paragraph">In some companies, they pay their employees on the first day of every month.</p>
+
+
+
+<p class="wp-block-paragraph">If you want to know what day of the week will that be, then this snippet can be helpful:</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<div class="oembed-gist"><script src="https://gist.github.com/fatosmorina/fab3abc973c29b56dbcf9a0475bff4a2.js?file=first_day_month.py"></script><noscript>View the code on <a href="https://gist.github.com/fatosmorina/fab3abc973c29b56dbcf9a0475bff4a2">Gist</a>.</noscript></div>
+</div></figure>
+
+
+
+<hr class="wp-block-separator">
+
+
+
+<p class="wp-block-paragraph">That’s pretty much it. I hope you learned at least something in this article.</p>
+
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div><div class="addtoany_share_save_container addtoany_content addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="/10-quick-python-snippets-that-can-help-you-work-with-dates/" data-a2a-title="10 Quick Python Snippets That Can Help You Work with Dates"><a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=%2F10-quick-python-snippets-that-can-help-you-work-with-dates%2F&amp;linkname=10%20Quick%20Python%20Snippets%20That%20Can%20Help%20You%20Work%20with%20Dates" title="Facebook" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=%2F10-quick-python-snippets-that-can-help-you-work-with-dates%2F&amp;linkname=10%20Quick%20Python%20Snippets%20That%20Can%20Help%20You%20Work%20with%20Dates" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share"></a></div></div>							
+	</div><!-- .post-content -->
+				
+		
+		<div class="post-meta-bottom">
+
+																		
+				<p class="post-categories"><span class="category-icon"><span class="front-flap"></span></span> <a href="/category/tech/" rel="category tag">Science &amp; Tech</a></p>
+	
+						
+							<p class="post-tags"><a href="/tag/date/" rel="tag">date</a><a href="/tag/dates/" rel="tag">dates</a><a href="/tag/developer/" rel="tag">developer</a></p>
+						
+												
+				<nav class="post-nav group">
+											
+											<a class="post-nav-older" href="/how-to-find-the-first-element-in-a-string-in-python-without-using-the-index-0/">
+							<h5>Previous post</h5>
+							How to Find the First Element in a String in Python Without Using the Index 0						</a>
+										
+											<a class="post-nav-newer" href="/how-to-check-whether-an-object-is-greater-than-another-object-in-python/">
+							<h5>Next post</h5>
+							How To Check Whether An Object is Greater Than Another Object in Python						</a>
+					
+				</nav><!-- .post-nav -->
+
+											
+		</div><!-- .post-meta-bottom -->
+
+		
+<div id="disqus_thread"></div>
+
+</article><!-- .post -->			
+		</div><!-- .posts -->
+	
+	</div><!-- .content -->
+
+		
+		
+	<div class="sidebar right" role="complementary">
+		<div id="search-2" class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form></div></div><div id="yikes_easy_mc_widget-2" class="widget widget_yikes_easy_mc_widget"><div class="widget-content"><h3 class="widget-title">Get a free PDF guide on How to be Super Productive and Get More From Life</h3>
+	<section id="yikes-mailchimp-container-1" class="yikes-mailchimp-container yikes-mailchimp-container-1 ">
+				<form id="productivity-list-1" class="yikes-easy-mc-form yikes-easy-mc-form-1  " method="POST" data-attr-form-id="1">
+
+													<label for="yikes-easy-mc-form-1-FNAME" class="FNAME-label ">
+
+										<!-- dictate label visibility -->
+																					<span class="FNAME-label">
+												First Name											</span>
+										
+										<!-- Description Above -->
+										
+										<input id="yikes-easy-mc-form-1-FNAME" name="FNAME" placeholder="" class="yikes-easy-mc-text " type="text" value="">
+
+										<!-- Description Below -->
+										
+									</label>
+																		<label for="yikes-easy-mc-form-1-LNAME" class="LNAME-label ">
+
+										<!-- dictate label visibility -->
+																					<span class="LNAME-label">
+												Last Name											</span>
+										
+										<!-- Description Above -->
+										
+										<input id="yikes-easy-mc-form-1-LNAME" name="LNAME" placeholder="" class="yikes-easy-mc-text " type="text" value="">
+
+										<!-- Description Below -->
+										
+									</label>
+																		<label for="yikes-easy-mc-form-1-EMAIL" class="EMAIL-label yikes-mailchimp-field-required ">
+
+										<!-- dictate label visibility -->
+																					<span class="EMAIL-label">
+												Email Address											</span>
+										
+										<!-- Description Above -->
+										
+										<input id="yikes-easy-mc-form-1-EMAIL" name="EMAIL" placeholder="" class="yikes-easy-mc-email " required="required" type="email" value="">
+
+										<!-- Description Below -->
+										
+									</label>
+									<label class="yikes-mailchimp-eu-compliance-label"><input type="checkbox" required="required" name="eu-laws" value="1" checked> <div class="yikes-mailchimp-eu-compliance-text"><p>I agree to my personal data being stored and used to receive the newsletter</p>
+</div></label>
+				<!-- Honeypot Trap -->
+				<input type="hidden" name="yikes-mailchimp-honeypot" id="yikes-mailchimp-honeypot-1" value="">
+
+				<!-- List ID -->
+				<input type="hidden" name="yikes-mailchimp-associated-list-id" id="yikes-mailchimp-associated-list-id-1" value="45be188f80">
+
+				<!-- The form that is being submitted! Used to display error/success messages above the correct form -->
+				<input type="hidden" name="yikes-mailchimp-submitted-form" id="yikes-mailchimp-submitted-form-1" value="1">
+
+				<!-- Submit Button -->
+				<button type="submit" class="yikes-easy-mc-submit-button yikes-easy-mc-submit-button-1 btn btn-primary "> <span class="yikes-mailchimp-submit-button-span-text">Submit</span></button>				<!-- Nonce Security Check -->
+				<input type="hidden" id="yikes_easy_mc_new_subscriber_1" name="yikes_easy_mc_new_subscriber" value="afe2fde829">
+				<input type="hidden" name="_wp_http_referer" value="/10-quick-python-snippets-that-can-help-you-work-with-dates/?simply_static_page=6731">				
+			</form>
+			<!-- Mailchimp Form generated by Easy Forms for Mailchimp v6.8.6 (https://wordpress.org/plugins/yikes-inc-easy-mailchimp-extender/) -->
+
+			</section>
+	</div></div><div id="grofile-2" class="widget widget-grofile grofile"><div class="widget-content">			<img src="https://0.gravatar.com/avatar/3a46db568b57a95f737f1cc7cb45b307?s=320" srcset="https://0.gravatar.com/avatar/3a46db568b57a95f737f1cc7cb45b307?s=320 1x, https://0.gravatar.com/avatar/3a46db568b57a95f737f1cc7cb45b307?s=480 1.5x, https://0.gravatar.com/avatar/3a46db568b57a95f737f1cc7cb45b307?s=640 2x, https://0.gravatar.com/avatar/3a46db568b57a95f737f1cc7cb45b307?s=960 3x, https://0.gravatar.com/avatar/3a46db568b57a95f737f1cc7cb45b307?s=1280 4x" class="grofile-thumbnail no-grav" alt="Fatos Morina" loading="lazy">
+			<div class="grofile-meta">
+				<h4><a href="https://gravatar.com/fatosi">Fatos Morina</a></h4>
+				<p>I am an experienced and passionate Senior Software Engineer with a demonstrated history of working in the full life cycle of software development with enormous curiosity for data science, machine learning, algorithms, data structures, and solving challenging problems. I am an open-source enthusiast at https://github.com/fatosmorina and also a writer. 
+
+I am open for new opportunities.</p>
+			</div>
+
+			
+			<p><a href="https://gravatar.com/fatosi" class="grofile-full-link">
+				View Full Profile →			</a></p>
+
+			</div></div><div id="archives-2" class="widget widget_archive"><div class="widget-content"><h3 class="widget-title">Archives</h3>
+			<ul>
+					<li><a href="/2024/01/">January 2024</a></li>
+	<li><a href="/2023/12/">December 2023</a></li>
+	<li><a href="/2023/11/">November 2023</a></li>
+	<li><a href="/2023/10/">October 2023</a></li>
+	<li><a href="/2023/09/">September 2023</a></li>
+	<li><a href="/2023/08/">August 2023</a></li>
+	<li><a href="/2023/07/">July 2023</a></li>
+	<li><a href="/2023/06/">June 2023</a></li>
+	<li><a href="/2023/05/">May 2023</a></li>
+	<li><a href="/2023/04/">April 2023</a></li>
+	<li><a href="/2023/03/">March 2023</a></li>
+	<li><a href="/2023/02/">February 2023</a></li>
+	<li><a href="/2023/01/">January 2023</a></li>
+	<li><a href="/2022/12/">December 2022</a></li>
+	<li><a href="/2022/11/">November 2022</a></li>
+	<li><a href="/2022/10/">October 2022</a></li>
+	<li><a href="/2022/09/">September 2022</a></li>
+	<li><a href="/2022/08/">August 2022</a></li>
+	<li><a href="/2022/07/">July 2022</a></li>
+	<li><a href="/2022/06/">June 2022</a></li>
+	<li><a href="/2022/05/">May 2022</a></li>
+	<li><a href="/2022/04/">April 2022</a></li>
+	<li><a href="/2022/03/">March 2022</a></li>
+	<li><a href="/2022/02/">February 2022</a></li>
+	<li><a href="/2022/01/">January 2022</a></li>
+	<li><a href="/2021/12/">December 2021</a></li>
+	<li><a href="/2021/11/">November 2021</a></li>
+	<li><a href="/2021/10/">October 2021</a></li>
+	<li><a href="/2021/09/">September 2021</a></li>
+	<li><a href="/2021/08/">August 2021</a></li>
+	<li><a href="/2021/07/">July 2021</a></li>
+	<li><a href="/2021/06/">June 2021</a></li>
+	<li><a href="/2021/05/">May 2021</a></li>
+	<li><a href="/2021/04/">April 2021</a></li>
+	<li><a href="/2021/03/">March 2021</a></li>
+	<li><a href="/2021/02/">February 2021</a></li>
+	<li><a href="/2021/01/">January 2021</a></li>
+	<li><a href="/2020/12/">December 2020</a></li>
+	<li><a href="/2020/11/">November 2020</a></li>
+	<li><a href="/2020/10/">October 2020</a></li>
+	<li><a href="/2020/09/">September 2020</a></li>
+	<li><a href="/2020/08/">August 2020</a></li>
+	<li><a href="/2020/07/">July 2020</a></li>
+	<li><a href="/2020/06/">June 2020</a></li>
+	<li><a href="/2020/05/">May 2020</a></li>
+	<li><a href="/2020/04/">April 2020</a></li>
+	<li><a href="/2020/03/">March 2020</a></li>
+	<li><a href="/2020/02/">February 2020</a></li>
+	<li><a href="/2020/01/">January 2020</a></li>
+	<li><a href="/2019/12/">December 2019</a></li>
+	<li><a href="/2019/11/">November 2019</a></li>
+	<li><a href="/2019/10/">October 2019</a></li>
+	<li><a href="/2019/09/">September 2019</a></li>
+	<li><a href="/2019/08/">August 2019</a></li>
+	<li><a href="/2019/07/">July 2019</a></li>
+	<li><a href="/2019/06/">June 2019</a></li>
+	<li><a href="/2019/05/">May 2019</a></li>
+	<li><a href="/2019/04/">April 2019</a></li>
+	<li><a href="/2019/03/">March 2019</a></li>
+	<li><a href="/2019/02/">February 2019</a></li>
+	<li><a href="/2019/01/">January 2019</a></li>
+	<li><a href="/2018/12/">December 2018</a></li>
+	<li><a href="/2018/11/">November 2018</a></li>
+	<li><a href="/2018/10/">October 2018</a></li>
+	<li><a href="/2018/09/">September 2018</a></li>
+	<li><a href="/2018/08/">August 2018</a></li>
+	<li><a href="/2018/07/">July 2018</a></li>
+	<li><a href="/2018/06/">June 2018</a></li>
+	<li><a href="/2018/05/">May 2018</a></li>
+	<li><a href="/2018/04/">April 2018</a></li>
+	<li><a href="/2018/03/">March 2018</a></li>
+	<li><a href="/2018/02/">February 2018</a></li>
+	<li><a href="/2018/01/">January 2018</a></li>
+	<li><a href="/2017/12/">December 2017</a></li>
+	<li><a href="/2017/11/">November 2017</a></li>
+	<li><a href="/2017/10/">October 2017</a></li>
+	<li><a href="/2017/09/">September 2017</a></li>
+	<li><a href="/2017/08/">August 2017</a></li>
+	<li><a href="/2017/07/">July 2017</a></li>
+	<li><a href="/2017/06/">June 2017</a></li>
+	<li><a href="/2017/05/">May 2017</a></li>
+	<li><a href="/2017/04/">April 2017</a></li>
+	<li><a href="/2017/03/">March 2017</a></li>
+	<li><a href="/2017/02/">February 2017</a></li>
+	<li><a href="/2017/01/">January 2017</a></li>
+	<li><a href="/2016/12/">December 2016</a></li>
+	<li><a href="/2016/11/">November 2016</a></li>
+	<li><a href="/2016/10/">October 2016</a></li>
+	<li><a href="/2016/09/">September 2016</a></li>
+	<li><a href="/2016/08/">August 2016</a></li>
+	<li><a href="/2016/07/">July 2016</a></li>
+	<li><a href="/2016/06/">June 2016</a></li>
+	<li><a href="/2016/05/">May 2016</a></li>
+	<li><a href="/2016/04/">April 2016</a></li>
+	<li><a href="/2016/03/">March 2016</a></li>
+	<li><a href="/2016/02/">February 2016</a></li>
+	<li><a href="/2016/01/">January 2016</a></li>
+	<li><a href="/2015/12/">December 2015</a></li>
+	<li><a href="/2015/11/">November 2015</a></li>
+	<li><a href="/2015/10/">October 2015</a></li>
+	<li><a href="/2015/09/">September 2015</a></li>
+	<li><a href="/2015/08/">August 2015</a></li>
+	<li><a href="/2015/07/">July 2015</a></li>
+	<li><a href="/2015/06/">June 2015</a></li>
+	<li><a href="/2015/05/">May 2015</a></li>
+	<li><a href="/2015/04/">April 2015</a></li>
+	<li><a href="/2015/03/">March 2015</a></li>
+	<li><a href="/2015/02/">February 2015</a></li>
+	<li><a href="/2015/01/">January 2015</a></li>
+	<li><a href="/2014/12/">December 2014</a></li>
+	<li><a href="/2014/11/">November 2014</a></li>
+	<li><a href="/2014/10/">October 2014</a></li>
+	<li><a href="/2014/06/">June 2014</a></li>
+	<li><a href="/2014/05/">May 2014</a></li>
+	<li><a href="/2014/04/">April 2014</a></li>
+	<li><a href="/2014/03/">March 2014</a></li>
+			</ul>
+
+			</div></div>	</div><!-- .sidebar -->
+	
+
+			
+</main><!-- .wrapper -->
+		
+	<div class="footer section large-padding bg-dark">
+		
+		<div class="footer-inner section-inner group">
+		
+			<!-- .footer-a -->
+				
+			<!-- .footer-b -->
+								
+			<!-- .footer-c -->
+					
+		</div><!-- .footer-inner -->
+	
+	</div><!-- .footer -->
+	
+	<div class="credits section bg-dark no-padding">
+	
+		<div class="credits-inner section-inner group">
+	
+			<p class="credits-left">
+				© 2026 <a href="/">Fatos Morina</a>
+			</p>
+			
+			<p class="credits-right">
+				<span>Theme by <a href="https://andersnoren.se/">Anders Noren</a></span> — <a title="To the top" class="tothetop">Up ↑</a>
+			</p>
+					
+		</div><!-- .credits-inner -->
+		
+	</div><!-- .credits -->
+
+</div><!-- .big-wrapper -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hemingway/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<link rel="stylesheet" id="yikes-inc-easy-mailchimp-public-styles-css" href="/wp-content/plugins/yikes-inc-easy-mailchimp-extender/public/css/yikes-inc-easy-mailchimp-extender-public.min.css?ver=7.0" media="all">
+<link rel="stylesheet" id="yikes-mailchimp-eu-frontend-compliance-styles-css" href="/wp-content/plugins/eu-opt-in-compliance-for-mailchimp/includes/css/yikes-mailchimp-eu-law-extension-frontend.min.css?ver=1.3.8" media="all">
+<link rel="stylesheet" id="gravatar-profile-widget-css" href="/wp-content/plugins/jetpack/modules/widgets/gravatar-profile.css?ver=20120711" media="all">
+<link rel="stylesheet" id="gravatar-card-services-css" href="https://secure.gravatar.com/css/services.css?ver=202626" media="all">
+<script id="ctt_plug_script-js" src="/wp-content/plugins/click-to-tweet/js/ctt-script.js?ver=1.0.0"></script>
+<script id="disqus_count-js-extra">
+var countVars = {"disqusShortname":"fatosmorina"};
+//# sourceURL=disqus_count-js-extra
+</script>
+<script id="disqus_count-js" src="/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.1.4"></script>
+<script id="disqus_embed-js-extra">
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.1.4 7.0"},"disqusIdentifier":"3195 /?p=3195","disqusShortname":"fatosmorina","disqusTitle":"10 Quick Python Snippets That Can Help You Work with Dates","disqusUrl":"/10-quick-python-snippets-that-can-help-you-work-with-dates/","postId":"3195"};
+//# sourceURL=disqus_embed-js-extra
+</script>
+<script id="disqus_embed-js" src="/wp-content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=3.1.4"></script>
+<script id="hemingway_global-js" src="/wp-content/themes/hemingway/assets/js/global.js?ver=2.3.2"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="/wp-includes/js/comment-reply.min.js?ver=7.0"></script>
+<script id="wp_slimstat-js-extra">
+var SlimStatParams = {"transport":"ajax","ajaxurl_rest":"/wp-json/slimstat/v1/hit","ajaxurl_rest_query":"/index.php?rest_route=/slimstat/v1/hit","resturl":"/wp-json/","ajaxurl_ajax":"/wp-admin/admin-ajax.php","ajaxurl":"/wp-admin/admin-ajax.php","baseurl":"/","dnt":"noslimstat,ab-item","ci":"eyJjb250ZW50X3R5cGUiOiJwb3N0IiwiY2F0ZWdvcnkiOiIzLDY2NSwxMjM1LDE2IiwiY29udGVudF9pZCI6MzE5NSwiYXV0aG9yIjoiRmF0b3NNb3JpbmEifQ--.380a0c060227c07222449c24fd349ea9b348badcad36f68cf9ba46bba3c2ed4a","wp_rest_nonce":"10657f0f34","is_logged_in":"0","wp_consent_integration":"disabled","consent_integration":"","consent_level_integration":"statistics","respect_dnt":"off","gdpr_enabled":"off","anonymous_tracking":"off","anonymize_ip":"no","hash_ip":"off","set_tracker_cookie":"on","use_slimstat_banner":"off"};
+//# sourceURL=wp_slimstat-js-extra
+</script>
+<script defer id="wp_slimstat-js" src="https://cdn.jsdelivr.net/wp/wp-slimstat/tags/5.5.0/wp-slimstat.min.js"></script>
+<script id="jetpack-stats-js-before">
+_stq = window._stq || [];
+_stq.push([ "view", {"v":"ext","blog":"65672927","post":"3195","tz":"2","srv":"www.fatosmorina.com","j":"1:15.9.1"} ]);
+_stq.push([ "clickTrackerInit", "65672927", "3195" ]);
+//# sourceURL=jetpack-stats-js-before
+</script>
+<script data-wp-strategy="defer" defer id="jetpack-stats-js" src="https://stats.wp.com/e-202626.js"></script>
+<script id="oembed-gist-js" src="/wp-content/plugins/oembed-gist/js/script.min.js?ver=4.9.1"></script>
+<script id="yikes-mailchimp-eu-frontend-compliance-scripts-js" src="/wp-content/plugins/eu-opt-in-compliance-for-mailchimp/includes/js/yikes-mailchimp-front-end-form-functions.min.js?ver=1.3.8"></script>
+<script id="yikes-easy-mc-ajax-js-extra">
+var yikes_mailchimp_ajax = {"ajax_url":"/wp-admin/admin-ajax.php","page_data":"3195","interest_group_checkbox_error":"This field is required.","preloader_url":"/wp-content/plugins/yikes-inc-easy-mailchimp-extender/includes/images/ripple.svg","loading_dots":"/wp-content/plugins/yikes-inc-easy-mailchimp-extender/includes/images/bars.svg","ajax_security_nonce":"bfaa73ba85","feedback_message_placement":"before"};
+//# sourceURL=yikes-easy-mc-ajax-js-extra
+</script>
+<script id="yikes-easy-mc-ajax-js" src="/wp-content/plugins/yikes-inc-easy-mailchimp-extender/public/js/yikes-mc-ajax-forms.min.js?ver=6.8.6"></script>
+<script id="form-submission-helpers-js-extra">
+var form_submission_helpers = {"ajax_url":"/wp-admin/admin-ajax.php","preloader_url":"/wp-admin/images/wpspin_light.gif","countries_with_zip":{"US":"US","GB":"GB","CA":"CA","IE":"IE","CN":"CN","IN":"IN","AU":"AU","BR":"BR","MX":"MX","IT":"IT","NZ":"NZ","JP":"JP","FR":"FR","GR":"GR","DE":"DE","NL":"NL","PT":"PT","ES":"ES"},"page_data":"3195"};
+//# sourceURL=form-submission-helpers-js-extra
+</script>
+<script id="form-submission-helpers-js" src="/wp-content/plugins/yikes-inc-easy-mailchimp-extender/public/js/form-submission-helpers.min.js?ver=6.8.6"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+</body>
+</html><!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+
+Served from: www.fatosmorina.com @ 2026-06-27 18:00:55 by W3 Total Cache
+-->
