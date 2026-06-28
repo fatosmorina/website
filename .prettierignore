@@ -1,0 +1,4 @@
+docs/wp-content/
+docs/wp-includes/
+node_modules/
+.git/
