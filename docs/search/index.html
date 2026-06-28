@@ -26,17 +26,14 @@
     </style>
   </head>
   <body>
-    <h1>Search results</h1>
-    <p id="summary">Loading…</p>
     <div id="results" class="results"></div>
     <script>
       const params = new URLSearchParams(window.location.search);
       const query = (params.get("q") || "").trim();
-      const summary = document.getElementById("summary");
       const results = document.getElementById("results");
 
       if (!query) {
-        summary.textContent = "Please enter a search term.";
+        results.innerHTML = '<p class="muted">Please enter a search term.</p>';
       } else {
         const normalized = query.toLowerCase();
         const entries = [
@@ -65,20 +62,21 @@
         );
 
         if (matches.length) {
-          summary.textContent = `Showing ${matches.length} result${matches.length === 1 ? "" : "s"} for “${query}”.`;
-          results.innerHTML = matches
-            .map(
-              (entry) => `
-            <div class="result">
-              <a href="${entry.url}">${entry.title}</a>
-            </div>
-          `,
-            )
-            .join("");
+          results.innerHTML = `
+            <p class="muted">Showing ${matches.length} result${matches.length === 1 ? "" : "s"} for “${query}”.</p>
+            ${matches
+              .map(
+                (entry) => `
+              <div class="result">
+                <a href="${entry.url}">${entry.title}</a>
+              </div>
+            `,
+              )
+              .join("")}
+          `;
         } else {
-          summary.textContent = `No results found for “${query}”.`;
           results.innerHTML =
-            '<p class="muted">Try a broader term such as “Python”, “JavaScript”, or “about”.</p>';
+            '<p class="muted">No results found for “${query}”. Try a broader term such as “Python”, “JavaScript”, or “about”.</p>';
         }
       }
     </script>
